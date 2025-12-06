@@ -1,25 +1,85 @@
-footer{
-    bottom: 0;
-    left: 0;
-    height: 10rem;
-    width: 100%;
+#footer{
+    margin-top: 200px;
+    background-color: rgb(78, 76, 76);
+}
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.logofooter{
+    padding-bottom: 20px;
+}
+.headerfooter{
+    padding-bottom: 20px;
+}
+.list-unstyled{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    gap: 10px;
 }
-footer ul{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    font-weight: 600;
+ul li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }
-footer ul li a{
-  color: black;
-  font-weight: 600;
+.contactfooter span{
+    color: white;
 }
-.copyright{
-    font-size:300;
+.icons {
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fa-brands {
+    font-size: xx-large;
+    color: #fcb69f  
+    
+}
+.imagefooter {
+  display: grid;
+  grid-template-columns: repeat(2, 6rem); 
+  gap: 1rem; 
+  justify-content: center; 
+  margin-top: 11px;
+
+}
+.cardfooter span{
+    padding-left:1.5rem;
+}
+
+.imagefooter img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover; 
+  border-radius: 0.5rem; 
+}
+
+@media (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    .logofooter {
+        padding-bottom: 1px;
+        margin-top: 1px;
+    }
+
+    .headerfooter{
+        padding-bottom: 10px;
+    }
+    .navfooter{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .contactfooter{
+        margin-bottom: 1rem;
+    }
+    .helpfooter{
+        margin-bottom: 1rem;
+    }
+    .cardfooter{
+
+    }
 }
